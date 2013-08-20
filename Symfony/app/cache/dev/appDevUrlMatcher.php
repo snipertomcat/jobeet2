@@ -25,6 +25,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         $allow = array();
         $pathinfo = rawurldecode($pathinfo);
 
+        // _assetic_1b37284
+        if ($pathinfo === '/js/1b37284.js') {
+            return array (  '_controller' => 'assetic.controller:render',  'name' => '1b37284',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_1b37284',);
+        }
+
         if (0 === strpos($pathinfo, '/_')) {
             // _wdt
             if (0 === strpos($pathinfo, '/_wdt') && preg_match('#^/_wdt/(?P<token>[^/]++)$#s', $pathinfo, $matches)) {
@@ -136,6 +141,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // stc_scraper_homepage
         if ($pathinfo === '/scraper') {
             return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\DefaultController::indexAction',  '_route' => 'stc_scraper_homepage',);
+        }
+
+        // index
+        if ($pathinfo === '/index') {
+            return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\CoreController::indexAction',  '_route' => 'index',);
+        }
+
+        // stc_scraper_theme
+        if ($pathinfo === '/scraper/theme') {
+            return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\DefaultController::themeAction',  '_route' => 'stc_scraper_theme',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
