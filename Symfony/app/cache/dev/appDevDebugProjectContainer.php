@@ -168,6 +168,10 @@ class appDevDebugProjectContainer extends Container
             'session.storage.native' => 'getSession_Storage_NativeService',
             'session.storage.php_bridge' => 'getSession_Storage_PhpBridgeService',
             'session_listener' => 'getSessionListenerService',
+            'stc_scraper.http' => 'getStcScraper_HttpService',
+            'stc_scraper.images' => 'getStcScraper_ImagesService',
+            'stc_scraper.parser' => 'getStcScraper_ParserService',
+            'stc_scraper.resolver' => 'getStcScraper_ResolverService',
             'streamed_response_listener' => 'getStreamedResponseListenerService',
             'swiftmailer.email_sender.listener' => 'getSwiftmailer_EmailSender_ListenerService',
             'swiftmailer.plugin.messagelogger' => 'getSwiftmailer_Plugin_MessageloggerService',
@@ -547,20 +551,26 @@ class appDevDebugProjectContainer extends Container
         $c = new \Doctrine\Common\Cache\ArrayCache();
         $c->setNamespace('sf2orm_default_4473b81f2ca2fdb85053b72ab2caa267');
 
-        $d = new \Doctrine\ORM\Configuration();
-        $d->setEntityNamespaces(array());
-        $d->setMetadataCacheImpl($a);
-        $d->setQueryCacheImpl($b);
-        $d->setResultCacheImpl($c);
-        $d->setMetadataDriverImpl(new \Doctrine\ORM\Mapping\Driver\DriverChain());
-        $d->setProxyDir('C:/xampp/htdocs/test/jobeet2/Symfony/app/cache/dev/doctrine/orm/Proxies');
-        $d->setProxyNamespace('Proxies');
-        $d->setAutoGenerateProxyClasses(true);
-        $d->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
-        $d->setDefaultRepositoryClassName('Doctrine\\ORM\\EntityRepository');
-        $d->setNamingStrategy(new \Doctrine\ORM\Mapping\DefaultNamingStrategy());
+        $d = new \Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver(array('C:\\xampp\\htdocs\\test\\jobeet2\\Symfony\\src\\Stc\\ScraperBundle\\Resources\\config\\doctrine' => 'Stc\\ScraperBundle\\Entity'));
+        $d->setGlobalBasename('mapping');
 
-        $this->services['doctrine.orm.default_entity_manager'] = $instance = call_user_func(array('Doctrine\\ORM\\EntityManager', 'create'), $this->get('doctrine.dbal.default_connection'), $d);
+        $e = new \Doctrine\ORM\Mapping\Driver\DriverChain();
+        $e->addDriver($d, 'Stc\\ScraperBundle\\Entity');
+
+        $f = new \Doctrine\ORM\Configuration();
+        $f->setEntityNamespaces(array('StcScraperBundle' => 'Stc\\ScraperBundle\\Entity'));
+        $f->setMetadataCacheImpl($a);
+        $f->setQueryCacheImpl($b);
+        $f->setResultCacheImpl($c);
+        $f->setMetadataDriverImpl($e);
+        $f->setProxyDir('C:/xampp/htdocs/test/jobeet2/Symfony/app/cache/dev/doctrine/orm/Proxies');
+        $f->setProxyNamespace('Proxies');
+        $f->setAutoGenerateProxyClasses(true);
+        $f->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
+        $f->setDefaultRepositoryClassName('Doctrine\\ORM\\EntityRepository');
+        $f->setNamingStrategy(new \Doctrine\ORM\Mapping\DefaultNamingStrategy());
+
+        $this->services['doctrine.orm.default_entity_manager'] = $instance = call_user_func(array('Doctrine\\ORM\\EntityManager', 'create'), $this->get('doctrine.dbal.default_connection'), $f);
 
         $this->get('doctrine.orm.default_manager_configurator')->configure($instance);
 
@@ -1780,7 +1790,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSecurity_FirewallService()
     {
-        return $this->services['security.firewall'] = new \Symfony\Component\Security\Http\Firewall(new \Symfony\Bundle\SecurityBundle\Security\FirewallMap($this, array('security.firewall.map.context.dev' => new \Symfony\Component\HttpFoundation\RequestMatcher('^/(_(profiler|wdt)|css|images|js)/'), 'security.firewall.map.context.login' => new \Symfony\Component\HttpFoundation\RequestMatcher('^/demo/secured/login$'), 'security.firewall.map.context.secured_area' => new \Symfony\Component\HttpFoundation\RequestMatcher('^/demo/secured/'))), $this->get('event_dispatcher'));
+        return $this->services['security.firewall'] = new \Symfony\Component\Security\Http\Firewall(new \Symfony\Bundle\SecurityBundle\Security\FirewallMap($this, array('security.firewall.map.context.dev' => new \Symfony\Component\HttpFoundation\RequestMatcher('^/(_(profiler|wdt)|css|images|js)/'), 'security.firewall.map.context.login' => new \Symfony\Component\HttpFoundation\RequestMatcher('^/demo/secured/login$'), 'security.firewall.map.context.secured_area' => new \Symfony\Component\HttpFoundation\RequestMatcher('^/admin/'))), $this->get('event_dispatcher'));
     }
 
     /**
@@ -1826,7 +1836,7 @@ class appDevDebugProjectContainer extends Container
         $e = $this->get('http_kernel');
         $f = $this->get('security.authentication.manager');
 
-        $g = new \Symfony\Component\HttpFoundation\RequestMatcher('^/demo/secured/hello/admin/');
+        $g = new \Symfony\Component\HttpFoundation\RequestMatcher('^/admin/settings/');
 
         $h = new \Symfony\Component\Security\Http\AccessMap();
         $h->add($g, array(0 => 'ROLE_ADMIN'), NULL);
@@ -2092,6 +2102,58 @@ class appDevDebugProjectContainer extends Container
     protected function getSessionListenerService()
     {
         return $this->services['session_listener'] = new \Symfony\Bundle\FrameworkBundle\EventListener\SessionListener($this);
+    }
+
+    /**
+     * Gets the 'stc_scraper.http' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Stc\ScraperBundle\Component\LibHttp A Stc\ScraperBundle\Component\LibHttp instance.
+     */
+    protected function getStcScraper_HttpService()
+    {
+        return $this->services['stc_scraper.http'] = new \Stc\ScraperBundle\Component\LibHttp('http_class', 'Test Webbot', 25, 'c:\\cookie.txt');
+    }
+
+    /**
+     * Gets the 'stc_scraper.images' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Stc\ScraperBundle\Component\LibDownloadImages A Stc\ScraperBundle\Component\LibDownloadImages instance.
+     */
+    protected function getStcScraper_ImagesService()
+    {
+        return $this->services['stc_scraper.images'] = new \Stc\ScraperBundle\Component\LibDownloadImages($this->get('stc_scraper.parser'), $this->get('stc_scraper.http'), $this->get('stc_scraper.resolver'));
+    }
+
+    /**
+     * Gets the 'stc_scraper.parser' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Stc\ScraperBundle\Component\LibParser A Stc\ScraperBundle\Component\LibParser instance.
+     */
+    protected function getStcScraper_ParserService()
+    {
+        return $this->services['stc_scraper.parser'] = new \Stc\ScraperBundle\Component\LibParser();
+    }
+
+    /**
+     * Gets the 'stc_scraper.resolver' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Stc\ScraperBundle\Component\LibAddressResolver A Stc\ScraperBundle\Component\LibAddressResolver instance.
+     */
+    protected function getStcScraper_ResolverService()
+    {
+        return $this->services['stc_scraper.resolver'] = new \Stc\ScraperBundle\Component\LibAddressResolver();
     }
 
     /**
@@ -3776,6 +3838,13 @@ class appDevDebugProjectContainer extends Container
             'sensio_framework_extra.converter.doctrine.class' => 'Sensio\\Bundle\\FrameworkExtraBundle\\Request\\ParamConverter\\DoctrineParamConverter',
             'sensio_framework_extra.converter.datetime.class' => 'Sensio\\Bundle\\FrameworkExtraBundle\\Request\\ParamConverter\\DateTimeParamConverter',
             'sensio_framework_extra.view.listener.class' => 'Sensio\\Bundle\\FrameworkExtraBundle\\EventListener\\TemplateListener',
+            'stc_scraper.http.class' => 'Stc\\ScraperBundle\\Component\\LibHttp',
+            'webbot_name' => 'Test Webbot',
+            'curl_timeout' => 25,
+            'cookie_file' => 'c:\\cookie.txt',
+            'stc_scraper.images.class' => 'Stc\\ScraperBundle\\Component\\LibDownloadImages',
+            'stc_scraper.resolver.class' => 'Stc\\ScraperBundle\\Component\\LibAddressResolver',
+            'stc_scraper.parser.class' => 'Stc\\ScraperBundle\\Component\\LibParser',
             'web_profiler.controller.profiler.class' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController',
             'web_profiler.controller.router.class' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\RouterController',
             'web_profiler.controller.exception.class' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\ExceptionController',

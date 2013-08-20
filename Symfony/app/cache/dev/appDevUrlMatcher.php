@@ -142,6 +142,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\DefaultController::indexAction',  '_route' => 'stc_scraper_homepage',);
         }
 
+        // stc_admin
+        if ($pathinfo === '/admin') {
+            return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\AdminController::indexAction',  '_route' => 'stc_admin',);
+        }
+
         // _welcome
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
