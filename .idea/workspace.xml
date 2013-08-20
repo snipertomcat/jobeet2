@@ -2,143 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d8b186-ce07-4d6e-82a7-3190da5a1ddf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/temp/Demo/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/temp/Welcome/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/Default/index_simple.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/jquery.localscroll-1.2.7-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/jquery.nicescroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/jquery.nicescroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/jquery.parallax-1.1.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/jquery.scrollTo-1.4.2-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/temp/layout.html.twig" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\profiler\36\70\307036" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\profiler\91\04\270491" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\profiler\ed\e8\1ce8ed" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\sessions\sess_u10f7rl8p9947vnrbk6uo0sm45" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\templates.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\0a\aa\b7f5ea298e3170cdfa12e5488f0e.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\1d\c7\15eb1aad54f191dbf3975563f33f.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\1d\ea\001a7e475d319d839ecc1e5f6f49.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\1e\3e\4cd4bf96baf060afd546707baf7e.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\25\18\7b251d951b0cd82581e426bbe806.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\28\39\9d93e0b51b5333b5653e35ed4f55.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\29\88\e77dd536eddfb44222d6f69b2c14.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\31\56\ab13b32f8c11d21c5e6e50bee369.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\3b\d0\3fdfeeefdd59b85f323c5ca34425.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\3f\e7\be91fe108f2df307db2405bdb212.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\40\1a\201bc5e407c70f31cfdd36057225.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\43\6b\cda353a2cfd515fc8d7192ecd38b.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\43\ba\6c3f0656920469b07741a94cc9b8.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\48\66\ff4eaa6d8ec995bedb9b67b3320f.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\48\a7\4f7fff71a9f3d950c2ccbbb2bc80.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\48\b8\343905cb43c10b72c51923bda9cf.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\4e\5e\aa91eb3891e8e82439ef3ca3a7d3.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\4e\5e\c2198e39194f76388d8fe354c5ec.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\4e\f6\4a078b3fcbe663e44fec0e964dff.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\4f\3c\775f8b0e99246943b948ae5a7858.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\55\f0\fa19f4523dfa8472bccf69a5cdea.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\57\bd\326758f0b4c9b66f1eea460e3e1c.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\58\b0\98ef2956c134f1e8a4737dc122f4.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\59\d3\a073ec974eb58968ec8814c6e391.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\5a\b4\29d1123e902a49a2f2296034e800.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\63\09\fa7cc4081c839128aacdad75815f.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\64\8d\67bd9d78de7a42cb582910c1fe0e.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\67\1f\e3f197f52a796a93680bab40af1a.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\67\c4\fcb7f6296e85f3c256f622912b01.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\69\69\8ae54d536069322d4cf77a3d2db2.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\6a\95\878c9e3c73cd92fcdea80d1b4bad.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\6e\b9\c041821414d681852aad4f41e973.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\6e\e9\4536b5af0ad38233a463b6cb1541.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\70\a7\e5a7eb41b7c161ba813bdfae99de.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\72\19\3ebfd97573dca36b49e98e4d9bc7.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\76\49\a5e77ed9c57675c5e9726687eea6.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\8c\ab\a810965d80a19a88c1369a358698.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\92\3a\e2e7288deda7e65bbacbd1a3822f.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\96\31\183e6da8a6a961b6d14549b7e9b0.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\9d\7e\b8b9403f40aa2a56e0fcacc26b1f.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\9f\4a\a4367a474cbca645db28daf89bbb.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\a2\5d\c6703660f491a9c83b910e0015d0.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\a7\2b\4363a48dd86366c1da5d1d97b323.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\ab\88\26bb3770d34052e1871d0337a859.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\b1\df\96df5d4c746234d1801f5b4595df.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\b2\ae\fe9de6d9a89de87c99161262cebe.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\b6\fb\ef2ff61f6557df15b7bcb22ecbda.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\b6\fc\8a8098061447aee07a2f5740cf55.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\ba\21\166f46d915968f61d430e4f4c2f1.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\bc\32\5e5cddfbb93b438fa3ec8de0f6d3.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\c2\c0\4d1900e779b752f41a689e591a36.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\c3\0c\7083b528881df7d94d59918d03e5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\c6\67\2f206cf20bcba614bc0626b2b468.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\cf\34\4b978fce67db7c29ad2a98521d9c.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\d1\87\9a29cccb6f6d10b2cd0b09a94352.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\d4\56\8ae7e66b451e31c52d79a0b818a6.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\d6\48\e62c3d5973298694b55b60267e57.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\d9\24\45932391630c8652996ea4ad7fb5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\da\6c\e48136a3357d376b759feed4c9dc.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\db\36\ea7dbe0bd3f45a8f944a8e3f1751.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\e0\44\aea3b80564297eb466cb5a245580.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\e3\f1\f57f20a74d9a335be5fcfb13dfa5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\e6\3e\d7ec1d9eb532a84c8e34fc62ad25.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\ec\1d\c12a922e4a0e5410b8a5a2c033a7.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\ec\da\d179d2ad399ece702adeff5aaaa0.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\ee\d7\b92f8340fa5bbbc3683f82fca706.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\f9\50\5cba3135dd6166998623726f8828.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\dev\twig\fc\5c\16f49efa28f480cd8a89def6f2d0.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\app\cache\prod\twig\f7\82\29d13f5d69e92e05a0f795b22714.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Resources\views\Demo\index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Resources\views\Welcome\index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Resources\views\layout.html.twig" afterPath="" />
-      <change type="MOVED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Resources\views\Demo\contact.html.twig" afterPath="$PROJECT_DIR$/Symfony/web/temp/Demo/contact.html.twig" />
-      <change type="MOVED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Resources\views\Demo\hello.html.twig" afterPath="$PROJECT_DIR$/Symfony/web/temp/Demo/hello.html.twig" />
-      <change type="MOVED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Resources\views\Secured\hello.html.twig" afterPath="$PROJECT_DIR$/Symfony/web/temp/Secured/hello.html.twig" />
-      <change type="MOVED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Resources\views\Secured\helloadmin.html.twig" afterPath="$PROJECT_DIR$/Symfony/web/temp/Secured/helloadmin.html.twig" />
-      <change type="MOVED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Resources\views\Secured\layout.html.twig" afterPath="$PROJECT_DIR$/Symfony/web/temp/Secured/layout.html.twig" />
-      <change type="MOVED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Resources\views\Secured\login.html.twig" afterPath="$PROJECT_DIR$/Symfony/web/temp/Secured/login.html.twig" />
-      <change type="MOVED" beforePath="C:\wamp\www\jobeet2\Symfony\src\Acme\DemoBundle\Twig\Extension\DemoExtension.php" afterPath="$PROJECT_DIR$/Symfony/src/Acme/DemoBundle/Twig/Extension/_DemoExtension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/composer.phar" afterPath="$PROJECT_DIR$/Symfony/composer.phar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/assetic/config/0/08143502187e72414f37be0084c6e20c.php" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/assetic/config/0/08143502187e72414f37be0084c6e20c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/assetic/config/4/43a80f0e087752a2d4724591f85aa0e1.php" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/assetic/config/4/43a80f0e087752a2d4724591f85aa0e1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevDebugProjectContainer.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevDebugProjectContainerCompiler.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevUrlMatcher.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/appDevUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/bundles/framework/css/body.css" afterPath="$PROJECT_DIR$/Symfony/web/bundles/framework/css/body.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/css/bootstrap.css" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/bundles/stcscraper/css/bootstrap.css" afterPath="$PROJECT_DIR$/Symfony/web/bundles/stcscraper/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/bootstrap.js" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/bundles/stcscraper/js/bootstrap.js" afterPath="$PROJECT_DIR$/Symfony/web/bundles/stcscraper/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/bundles/stcscraper/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/Symfony/web/bundles/stcscraper/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/public/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/bundles/stcscraper/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/Symfony/web/bundles/stcscraper/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/bootstrap.php.cache" afterPath="$PROJECT_DIR$/Symfony/app/bootstrap.php.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/classes.map" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/classes.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/classes.php.meta" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/classes.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/classes.php" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/classes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/bundles/sensiodistribution/webconfigurator/css/configurator.css" afterPath="$PROJECT_DIR$/Symfony/web/bundles/sensiodistribution/webconfigurator/css/configurator.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/assetic/config/d/d5acca9cfcfb9c82f939af106d94051f.php" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/assetic/config/d/d5acca9cfcfb9c82f939af106d94051f.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/logs/dev.log" afterPath="$PROJECT_DIR$/Symfony/app/logs/dev.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/bundles/framework/css/exception.css" afterPath="$PROJECT_DIR$/Symfony/web/bundles/framework/css/exception.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/bundles/sensiodistribution/webconfigurator/css/install.css" afterPath="$PROJECT_DIR$/Symfony/web/bundles/sensiodistribution/webconfigurator/css/install.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jobeet2.iml" afterPath="$PROJECT_DIR$/.idea/jobeet2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/config/parameters.yml" afterPath="$PROJECT_DIR$/Symfony/app/config/parameters.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/app/cache/dev/assetic/routing.yml" afterPath="$PROJECT_DIR$/Symfony/app/cache/dev/assetic/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/web/bundles/framework/css/structure.css" afterPath="$PROJECT_DIR$/Symfony/web/bundles/framework/css/structure.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jobeet2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="84d8b186-ce07-4d6e-82a7-3190da5a1ddf" time="1376901552266" ignored="false" />
+    <file path="/Dummy.txt" changelist="84d8b186-ce07-4d6e-82a7-3190da5a1ddf" time="1376962419000" ignored="false" />
     <file path="/routing.yml" changelist="84d8b186-ce07-4d6e-82a7-3190da5a1ddf" time="1376902576693" ignored="false" />
     <file path="/layout.html.twig" changelist="84d8b186-ce07-4d6e-82a7-3190da5a1ddf" time="1376906455067" ignored="false" />
     <file path="/config.yml" changelist="84d8b186-ce07-4d6e-82a7-3190da5a1ddf" time="1376704934051" ignored="false" />
@@ -169,19 +38,8 @@
       <file leaf-file-name="index_simple.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/Default/index_simple.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="43" selection-start="183" selection-end="183" vertical-scroll-proportion="2.6153846">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#nav#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="8" column="43" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,36 +47,8 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1250" column="0" selection-start="63673" selection-end="63673" vertical-scroll-proportion="-19.26923">
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#1;n#div#1;n#div#2;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#form#1;n#div#1;n#div#2;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#form#1;n#div#1;n#div#2;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#3;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#3;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#3;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#5;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#5;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="1250" column="0" selection-start="63673" selection-end="63673" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -226,13 +56,8 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="31" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.5288889">
-              <folding>
-                <element signature="tag#style#0;tag#html#0" expanded="false" />
-                <element signature="tag#script#7;tag#html#0" expanded="false" />
-                <element signature="tag#script#8;tag#html#0" expanded="false" />
-                <element signature="tag#script#9;tag#html#0" expanded="false" />
-              </folding>
+            <state line="108" column="31" selection-start="3338" selection-end="3339" vertical-scroll-proportion="0.44541484">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -257,6 +82,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -283,9 +109,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1280" />
-    <option name="height" value="744" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -313,7 +140,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -622,244 +448,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Stc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScraperBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScraperBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScraperBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScraperBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScraperBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScraperBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScraperBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobeet2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Acme" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -974,6 +562,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1007,6 +596,9 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SqlCodeAssistantSettings">
+    <option name="dbBrowserSelectedConnection" value="jobeet2" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="84d8b186-ce07-4d6e-82a7-3190da5a1ddf" name="Default" comment="" />
@@ -1016,20 +608,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1280" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1616" height="916" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27914613" sideWeight="0.8743633" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21814671" sideWeight="0.67017084" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="DatabaseBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12563667" sideWeight="0.9975145" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09592641" sideWeight="0.9975145" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1102,30 +695,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Symfony/app/config/routing_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="67" selection-start="73" selection-end="73" vertical-scroll-proportion="0.036324788">
-          <folding />
-        </state>
+        <state line="1" column="67" selection-start="73" selection-end="73" vertical-scroll-proportion="0.036324788" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/app/AppCache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="138" selection-end="138" vertical-scroll-proportion="0.26923078">
-          <folding />
-        </state>
+        <state line="7" column="1" selection-start="138" selection-end="138" vertical-scroll-proportion="0.26923078" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="53" selection-start="784" selection-end="784" vertical-scroll-proportion="0.65384614">
-          <folding />
-        </state>
+        <state line="18" column="53" selection-start="784" selection-end="784" vertical-scroll-proportion="0.65384614" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/Core/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="16" selection-start="0" selection-end="33" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="16" selection-start="0" selection-end="33" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/app/phpunit.xml.dist">
@@ -1137,32 +722,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Acme/DemoBundle/Twig/Extension/_DemoExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="42" selection-start="1368" selection-end="1368" vertical-scroll-proportion="2.020979">
-          <folding>
-            <marker date="1376862235801" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="51" column="42" selection-start="1368" selection-end="1368" vertical-scroll-proportion="2.020979" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/temp/Demo/hello.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="33" selection-start="83" selection-end="83" vertical-scroll-proportion="0.07692308">
-          <folding />
-        </state>
+        <state line="2" column="33" selection-start="83" selection-end="83" vertical-scroll-proportion="0.07692308" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/StcScraperBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/temp/Demo/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/config/routing.yml">
@@ -1174,87 +749,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1250" column="0" selection-start="63673" selection-end="63673" vertical-scroll-proportion="-19.26923">
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#1;n#div#1;n#div#2;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#form#1;n#div#1;n#div#2;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#1;n#div#1;n#div#2;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#3;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#3;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#3;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#4;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#5;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#5;n#div#1;n#div#0;n#div#0;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#5;n#div#6;n#section#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="1250" column="0" selection-start="63673" selection-end="63673" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/Default/index_simple.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="183" selection-end="183" vertical-scroll-proportion="2.6153846">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#nav#0;n#footer#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="8" column="43" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="385" selection-end="385" vertical-scroll-proportion="0.46153846">
-          <folding />
-        </state>
+        <state line="12" column="7" selection-start="385" selection-end="385" vertical-scroll-proportion="0.46153846" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/temp/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/temp/Welcome/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Stc/ScraperBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="31" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.5288889">
-          <folding>
-            <element signature="tag#style#0;tag#html#0" expanded="false" />
-            <element signature="tag#script#7;tag#html#0" expanded="false" />
-            <element signature="tag#script#8;tag#html#0" expanded="false" />
-            <element signature="tag#script#9;tag#html#0" expanded="false" />
-          </folding>
+        <state line="108" column="31" selection-start="3338" selection-end="3339" vertical-scroll-proportion="0.44541484">
+          <folding />
         </state>
       </provider>
     </entry>
