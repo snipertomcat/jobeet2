@@ -21,10 +21,10 @@ class DefaultController extends Controller
         $parser = $this->get('stc_scraper.parser');
         $string = "The quick brown fox";
 
-        $parsed_text = $parser->split_string($string, "quick", 'BEFORE', 'INCL');
+        $parsed_text = $parser->split_string($string, "quick", BEFORE, INCL);
         print_r($parsed_text);
 
-        $parsed_text = split_string($string, "quick", 'AFTER', 'EXCL');
+        $parsed_text = $parser->split_string($string, "quick", AFTER, EXCL);
         print_r($parsed_text);
 
         return $this->render('StcScraperBundle:Default:index.html.twig');
