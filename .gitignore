@@ -1,7 +1,0 @@
-/Symfony/vendor
-/Symfony/vendor
-cache
-logs
-/Symfony/composer.phar
-/Symfony/composer.lock
-.idea
