@@ -138,13 +138,80 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // stc_scraper_homepage
-        if ($pathinfo === '/scraper') {
-            return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\DefaultController::indexAction',  '_route' => 'stc_scraper_homepage',);
+        if (0 === strpos($pathinfo, '/s')) {
+            if (0 === strpos($pathinfo, '/stc_scraper')) {
+                // stc_scraper
+                if (rtrim($pathinfo, '/') === '/stc_scraper') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'stc_scraper');
+                    }
+
+                    return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\ScrapeContentController::indexAction',  '_route' => 'stc_scraper',);
+                }
+
+                // stc_scraper_show
+                if (preg_match('#^/stc_scraper/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'stc_scraper_show')), array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\ScrapeContentController::showAction',));
+                }
+
+                // stc_scraper_new
+                if ($pathinfo === '/stc_scraper/new') {
+                    return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\ScrapeContentController::newAction',  '_route' => 'stc_scraper_new',);
+                }
+
+                // stc_scraper_create
+                if ($pathinfo === '/stc_scraper/create') {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_stc_scraper_create;
+                    }
+
+                    return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\ScrapeContentController::createAction',  '_route' => 'stc_scraper_create',);
+                }
+                not_stc_scraper_create:
+
+                // stc_scraper_edit
+                if (preg_match('#^/stc_scraper/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'stc_scraper_edit')), array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\ScrapeContentController::editAction',));
+                }
+
+                // stc_scraper_update
+                if (preg_match('#^/stc_scraper/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                        $allow = array_merge($allow, array('POST', 'PUT'));
+                        goto not_stc_scraper_update;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'stc_scraper_update')), array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\ScrapeContentController::updateAction',));
+                }
+                not_stc_scraper_update:
+
+                // stc_scraper_delete
+                if (preg_match('#^/stc_scraper/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                        $allow = array_merge($allow, array('POST', 'DELETE'));
+                        goto not_stc_scraper_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'stc_scraper_delete')), array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\ScrapeContentController::deleteAction',));
+                }
+                not_stc_scraper_delete:
+
+            }
+
+            // stc_scraper_homepage
+            if ($pathinfo === '/scraper') {
+                return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\DefaultController::indexAction',  '_route' => 'stc_scraper_homepage',);
+            }
+
         }
 
         // index
-        if ($pathinfo === '/index') {
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'index');
+            }
+
             return array (  '_controller' => 'Stc\\ScraperBundle\\Controller\\CoreController::indexAction',  '_route' => 'index',);
         }
 

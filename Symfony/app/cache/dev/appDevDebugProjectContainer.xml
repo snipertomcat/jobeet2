@@ -24,11 +24,11 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">127.0.0.1</parameter>
-    <parameter key="database_port">null</parameter>
-    <parameter key="database_name">symfony</parameter>
+    <parameter key="database_host">localhost</parameter>
+    <parameter key="database_port">3306</parameter>
+    <parameter key="database_name">scrapetaculous</parameter>
     <parameter key="database_user">root</parameter>
-    <parameter key="database_password">null</parameter>
+    <parameter key="database_password">yeahyeah</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">127.0.0.1</parameter>
     <parameter key="mailer_user">null</parameter>
@@ -399,8 +399,8 @@
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">C:\windows\system32\java.EXE</parameter>
     <parameter key="assetic.node.bin">/usr/bin/node</parameter>
-    <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
-    <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
+    <parameter key="assetic.ruby.bin">C:\Ruby193\bin\ruby.EXE</parameter>
+    <parameter key="assetic.sass.bin">C:\Ruby193\bin\sass.BAT</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
     <parameter key="assetic.twig_extension.functions" type="collection"/>
     <parameter key="assetic.controller.class">Symfony\Bundle\AsseticBundle\Controller\AsseticController</parameter>
@@ -474,6 +474,13 @@
     <parameter key="sensio_framework_extra.converter.doctrine.class">Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter</parameter>
     <parameter key="sensio_framework_extra.converter.datetime.class">Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DateTimeParamConverter</parameter>
     <parameter key="sensio_framework_extra.view.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener</parameter>
+    <parameter key="stc_scraper.http.class">Stc\ScraperBundle\Component\LibHttp</parameter>
+    <parameter key="webbot_name">Test Webbot</parameter>
+    <parameter key="curl_timeout">25</parameter>
+    <parameter key="cookie_file">c:\cookie.txt</parameter>
+    <parameter key="stc_scraper.images.class">Stc\ScraperBundle\Component\LibDownloadImages</parameter>
+    <parameter key="stc_scraper.resolver.class">Stc\ScraperBundle\Component\LibAddressResolver</parameter>
+    <parameter key="stc_scraper.parser.class">Stc\ScraperBundle\Component\LibParser</parameter>
     <parameter key="web_profiler.controller.profiler.class">Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController</parameter>
     <parameter key="web_profiler.controller.router.class">Symfony\Bundle\WebProfilerBundle\Controller\RouterController</parameter>
     <parameter key="web_profiler.controller.exception.class">Symfony\Bundle\WebProfilerBundle\Controller\ExceptionController</parameter>
@@ -1598,7 +1605,7 @@
             </argument>
             <argument key="security.firewall.map.context.secured_area" type="service">
               <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                <argument>^/demo/secured/</argument>
+                <argument>^/admin/</argument>
               </service>
             </argument>
           </argument>
@@ -1677,7 +1684,7 @@
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                      <argument>^/demo/secured/hello/admin/</argument>
+                      <argument>^/admin/settings/</argument>
                     </service>
                   </argument>
                   <argument type="collection">
@@ -1818,7 +1825,7 @@
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                      <argument>^/demo/secured/hello/admin/</argument>
+                      <argument>^/admin/settings/</argument>
                     </service>
                   </argument>
                   <argument type="collection">
@@ -2166,11 +2173,11 @@
     <service id="doctrine.dbal.logger.profiling.default" class="Doctrine\DBAL\Logging\DebugStack" public="false"/>
     <service id="doctrine.dbal.default_connection" class="stdClass" factory-method="createConnection" factory-service="doctrine.dbal.connection_factory">
       <argument type="collection">
-        <argument key="dbname">symfony</argument>
-        <argument key="host">127.0.0.1</argument>
-        <argument key="port">null</argument>
+        <argument key="dbname">scrapetaculous</argument>
+        <argument key="host">localhost</argument>
+        <argument key="port">3306</argument>
         <argument key="user">root</argument>
-        <argument key="password">null</argument>
+        <argument key="password">yeahyeah</argument>
         <argument key="charset">UTF8</argument>
         <argument key="driver">pdo_mysql</argument>
         <argument key="driverOptions" type="collection"/>
@@ -2229,7 +2236,9 @@
       <argument type="service">
         <service class="Doctrine\ORM\Configuration" public="false">
           <call method="setEntityNamespaces">
-            <argument type="collection"/>
+            <argument type="collection">
+              <argument key="StcScraperBundle">Stc\ScraperBundle\Entity</argument>
+            </argument>
           </call>
           <call method="setMetadataCacheImpl">
             <argument type="service">
@@ -2260,7 +2269,21 @@
           </call>
           <call method="setMetadataDriverImpl">
             <argument type="service">
-              <service class="Doctrine\ORM\Mapping\Driver\DriverChain" public="false"/>
+              <service class="Doctrine\ORM\Mapping\Driver\DriverChain" public="false">
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver" public="false">
+                      <argument type="collection">
+                        <argument key="C:\wamp\www\jobeet2\Symfony\src\Stc\ScraperBundle\Resources\config\doctrine">Stc\ScraperBundle\Entity</argument>
+                      </argument>
+                      <call method="setGlobalBasename">
+                        <argument>mapping</argument>
+                      </call>
+                    </service>
+                  </argument>
+                  <argument>Stc\ScraperBundle\Entity</argument>
+                </call>
+              </service>
             </argument>
           </call>
           <call method="setProxyDir">
@@ -2323,6 +2346,19 @@
     </service>
     <service id="sensio_framework_extra.cache.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener">
       <tag name="kernel.event_subscriber"/>
+    </service>
+    <service id="stc_scraper.http" class="Stc\ScraperBundle\Component\LibHttp">
+      <argument>http_class</argument>
+      <argument>Test Webbot</argument>
+      <argument>25</argument>
+      <argument>c:\cookie.txt</argument>
+    </service>
+    <service id="stc_scraper.resolver" class="Stc\ScraperBundle\Component\LibAddressResolver"/>
+    <service id="stc_scraper.parser" class="Stc\ScraperBundle\Component\LibParser"/>
+    <service id="stc_scraper.images" class="Stc\ScraperBundle\Component\LibDownloadImages">
+      <argument type="service" id="stc_scraper.parser"/>
+      <argument type="service" id="stc_scraper.http"/>
+      <argument type="service" id="stc_scraper.resolver"/>
     </service>
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController">
       <argument type="service" id="router" on-invalid="null"/>
