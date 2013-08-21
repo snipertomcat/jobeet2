@@ -1,0 +1,146 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ScrapeStatus</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Url</th>
+                <td>{{ entity.url }}</td>
+            </tr>
+            <tr>
+                <th>Content_type</th>
+                <td>{{ entity.contenttype }}</td>
+            </tr>
+            <tr>
+                <th>Http_code</th>
+                <td>{{ entity.httpcode }}</td>
+            </tr>
+            <tr>
+                <th>Header_size</th>
+                <td>{{ entity.headersize }}</td>
+            </tr>
+            <tr>
+                <th>Request_size</th>
+                <td>{{ entity.requestsize }}</td>
+            </tr>
+            <tr>
+                <th>Filetime</th>
+                <td>{{ entity.filetime }}</td>
+            </tr>
+            <tr>
+                <th>Ssl_verify_result</th>
+                <td>{{ entity.sslverifyresult }}</td>
+            </tr>
+            <tr>
+                <th>Redirect_count</th>
+                <td>{{ entity.redirectcount }}</td>
+            </tr>
+            <tr>
+                <th>Total_time</th>
+                <td>{{ entity.totaltime }}</td>
+            </tr>
+            <tr>
+                <th>Namelookup_time</th>
+                <td>{{ entity.namelookuptime }}</td>
+            </tr>
+            <tr>
+                <th>Connect_time</th>
+                <td>{{ entity.connecttime }}</td>
+            </tr>
+            <tr>
+                <th>Pretransfer_time</th>
+                <td>{{ entity.pretransfertime }}</td>
+            </tr>
+            <tr>
+                <th>Size_upload</th>
+                <td>{{ entity.sizeupload }}</td>
+            </tr>
+            <tr>
+                <th>Size_download</th>
+                <td>{{ entity.sizedownload }}</td>
+            </tr>
+            <tr>
+                <th>Speed_download</th>
+                <td>{{ entity.speeddownload }}</td>
+            </tr>
+            <tr>
+                <th>Speed_upload</th>
+                <td>{{ entity.speedupload }}</td>
+            </tr>
+            <tr>
+                <th>Download_content_length</th>
+                <td>{{ entity.downloadcontentlength }}</td>
+            </tr>
+            <tr>
+                <th>Upload_content_length</th>
+                <td>{{ entity.uploadcontentlength }}</td>
+            </tr>
+            <tr>
+                <th>Starttransfer_time</th>
+                <td>{{ entity.starttransfertime }}</td>
+            </tr>
+            <tr>
+                <th>Redirect_time</th>
+                <td>{{ entity.redirecttime }}</td>
+            </tr>
+            <tr>
+                <th>Certinfo</th>
+                <td>{{ entity.certinfo }}</td>
+            </tr>
+            <tr>
+                <th>Primary_ip</th>
+                <td>{{ entity.primaryip }}</td>
+            </tr>
+            <tr>
+                <th>Primary_port</th>
+                <td>{{ entity.primaryport }}</td>
+            </tr>
+            <tr>
+                <th>Local_ip</th>
+                <td>{{ entity.localip }}</td>
+            </tr>
+            <tr>
+                <th>Local_port</th>
+                <td>{{ entity.localport }}</td>
+            </tr>
+            <tr>
+                <th>Redirect_url</th>
+                <td>{{ entity.redirecturl }}</td>
+            </tr>
+            <tr>
+                <th>Created_at</th>
+                <td>{{ entity.createdat|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Updated_at</th>
+                <td>{{ entity.updatedat|date('Y-m-d H:i:s') }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('stc_scraper_status') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('stc_scraper_status_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('stc_scraper_status_delete', { 'id': entity.id }) }}" method="post">
+            <input type="hidden" name="_method" value="DELETE" />
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>
+{% endblock %}

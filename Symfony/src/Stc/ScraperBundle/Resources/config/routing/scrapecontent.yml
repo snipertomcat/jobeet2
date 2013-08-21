@@ -1,0 +1,30 @@
+stc_scraper:
+    pattern:  /
+    defaults: { _controller: "StcScraperBundle:ScrapeContent:index" }
+
+stc_scraper_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "StcScraperBundle:ScrapeContent:show" }
+
+stc_scraper_new:
+    pattern:  /new
+    defaults: { _controller: "StcScraperBundle:ScrapeContent:new" }
+
+stc_scraper_create:
+    pattern:  /create
+    defaults: { _controller: "StcScraperBundle:ScrapeContent:create" }
+    requirements: { _method: post }
+
+stc_scraper_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "StcScraperBundle:ScrapeContent:edit" }
+
+stc_scraper_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "StcScraperBundle:ScrapeContent:update" }
+    requirements: { _method: post|put }
+
+stc_scraper_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "StcScraperBundle:ScrapeContent:delete" }
+    requirements: { _method: post|delete }

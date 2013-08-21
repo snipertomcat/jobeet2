@@ -29,4 +29,9 @@ class DefaultController extends Controller
 
         return $this->render('StcScraperBundle:Default:index.html.twig');
     }
+
+    public function themeAction()
+    {
+        return $this->render('StcScraperBundle:Default:index_simple.html.twig');
+    }
 }

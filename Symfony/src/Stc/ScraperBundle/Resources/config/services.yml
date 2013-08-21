@@ -19,6 +19,7 @@ services:
         class: %stc_scraper.resolver.class%
     stc_scraper.parser:
         class: %stc_scraper.parser.class%
+        arguments: []
     stc_scraper.images:
         class: %stc_scraper.images.class%
         arguments: ['@stc_scraper.parser', '@stc_scraper.http', '@stc_scraper.resolver']

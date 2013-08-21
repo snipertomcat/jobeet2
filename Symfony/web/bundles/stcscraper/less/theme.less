@@ -1,0 +1,432 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700);
+
+.form-control {
+  .box-shadow(none);
+  color: @input-color;
+
+  &[disabled] {
+    border-color: @input-border-disabled;
+  }
+}
+
+.btn, .btn:hover {
+  border: none;
+}
+
+.btn-group .btn + .btn {
+  margin: 0;
+}
+
+pre {
+  border: none;
+  color: @pre-color;
+}
+
+legend {
+  color: @legend-color;
+}
+
+.well {
+  border: none;
+  border-radius: @border-radius-base;
+  .box-shadow(none);
+}
+
+.panel {
+  border: none;
+}
+
+.page-header {
+  margin-top: 20px;
+}
+
+.nav > li > a {
+  padding-left: @navbar-link-padding-horizontal;
+  padding-right: @navbar-link-padding-horizontal;
+
+  color: @text-color;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: transparent;
+}
+
+.navbar-nav {
+  > li {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: @navbar-divider-color;
+    }
+
+    &:hover,
+    &:hover + li,
+    &.active,
+    &.active + li {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .disabled {
+    &:hover,
+    &:hover + li {
+      &:before {
+        display: block;
+      }
+    }
+  }
+
+  > li:first-child {
+    &:before {
+      display: none;
+    }
+  }
+
+  > li > a {
+    font-size: @navbar-link-font-size;
+    font-weight: 600;
+  }
+
+  > .active > a {
+    cursor: default;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 4px;
+      background: @brand-primary;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 4px;
+      margin: 0 0 0 -5px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid @brand-primary;
+    }
+  }
+}
+
+.navbar-inverse {
+  .navbar-nav {
+    > li {
+      &:before {
+        background: @navbar-inverse-divider-color;
+      }
+    }
+
+    > .active > a {
+      &:after {
+        background: @navbar-bg;
+      }
+
+      &:before {
+        border-top-color: @navbar-bg;
+      }
+    }
+  }
+}
+
+.input-group-addon {
+  background: @input-group-addon-bg;
+}
+
+.dropdown-menu {
+  .box-shadow(none);
+  border: none;
+  margin-top: @dropdown-margin-top;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid @brand-primary;
+  }
+
+  &.pull-right {
+    &:before {
+      right: 20px;
+      left: auto;
+    }
+  }
+  
+  > li > a {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: @dropdown-link-hover-color;
+      background: @dropdown-link-hover-bg;
+    }
+  }
+
+  .disabled > a {
+    &,
+    &:hover,
+    &:focus {
+      color: @dropdown-link-disabled-color;
+    }
+  }
+
+  .active > a {
+    &,
+    &:hover,
+    &:focus {
+      position: relative;
+      color: @dropdown-link-active-color;
+      text-decoration: none;
+      outline: 0;
+      background: @dropdown-link-active-bg;
+      cursor: default;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: auto;
+      width: 4px;
+      height: 100%;
+      background: @brand-primary;
+    }
+  }
+
+  .dropdown-header {
+    color: @dropdown-header-color;
+  }
+}
+
+.dropup .dropdown-menu {
+  margin-bottom: @dropdown-margin-top;
+
+  &:before {
+    top: auto;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid @brand-primary;
+    border-bottom: none;
+  }
+}
+
+.pagination {
+  > li {
+    > a,
+    > span {
+      border: none;
+      color: @text-color;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: @pagination-divider-color;
+      }
+    }
+
+    &:first-child {
+      > a,
+      > span {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &:before {
+      display: none;
+    }
+  }
+
+  > li > a:hover,
+  > li > a:focus {
+    &:before {
+      display: none;
+    }
+  }
+
+  > .disabled {
+    > span,
+    > a,
+    > a:hover,
+    > a:focus {
+      &:before {
+        display: block;
+      }
+    }
+  }
+}
+
+.pager {
+  li {
+    > a,
+    > span {
+      border: none;
+      color: @text-color;
+    }
+  }
+}
+
+.alert {
+  border: none;
+  background-color: #000;
+}
+.alert-danger {
+  background-color: #58494b;
+  color:#e94f64;
+}
+.alert-success {
+  background-color: #49564c;
+  color:#52d273;
+}
+.alert-info {
+  background-color: #485457;
+  color:#46bcde;
+}
+
+.alert-warning {
+  background-color: #585549;
+  color:#e5c454;
+}
+
+.panel {
+  .list-group {
+    margin: 0 0 10px;
+
+    li.list-group-item {
+      &:hover {
+        border-color: @list-group-border;
+      }
+    }
+
+    .list-group-item {
+      border-width: 1px;
+      color: @text-color;
+
+      &.active {
+        .list-group-item-text {
+          color: @text-color;
+        }
+      }
+
+      &:hover {
+        border-color: @list-group-active-border;
+      }
+
+      &:first-child {
+        .border-top-radius(@border-radius-base);
+      }
+      // But keep it for the last one
+      &:last-child {
+        border-bottom: 1px solid @list-group-border;
+      }
+    }
+
+
+  }
+
+  .list-group-flush {
+    margin: 15px -15px -15px;
+
+    .list-group-item {
+      border-width: 1px 0;
+      color: @text-color;
+
+      &.active {
+        .list-group-item-text {
+          color: @text-color;
+        }
+      }
+
+      &:hover {
+        border-color: @list-group-border;
+      }
+
+      &:first-child {
+        .border-top-radius(0);
+      }
+      // But keep it for the last one
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+}
+
+.progress {
+  .box-shadow(none);
+
+  .progress-bar {
+    .box-shadow(none);
+  }
+}
+
+.popover {
+  border: none;
+  padding: 0;
+  .box-shadow(none);
+}
+
+// Parent container
+.accordion-group {
+  background: @accordion-group-bg;
+}
+
+.media-heading {
+  color: @brand-primary;
+}
+
+.thumbnail .caption {
+  .caption-label {
+    color: @thumbnail-caption-label-color;
+  }
+}
+
+.thumbnail {
+  border-top: 4px solid @brand-success;
+  border-right:none;
+  border-left:none;
+  border-bottom:none;
+  padding:0px;
+}
+
+.navbar-text {
+  margin-top:10px;
+  margin-bottom:10px;  
+}
+
+.img-circle {
+  border:2px solid @brand-primary;
+}

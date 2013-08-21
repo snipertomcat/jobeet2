@@ -1,0 +1,15 @@
+stc_scraper:
+    resource: "@StcScraperBundle/Resources/config/routing/scrapecontent.yml"
+    prefix: /stc_scraper
+
+stc_scraper_homepage:
+    pattern:  /scraper
+    defaults: { _controller: StcScraperBundle:Default:index }
+
+index:
+    pattern: /
+    defaults: { _controller: StcScraperBundle:Core:index }
+
+stc_scraper_theme:
+    pattern: /scraper/theme
+    defaults: { _controller: StcScraperBundle:Default:theme }
