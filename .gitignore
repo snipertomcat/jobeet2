@@ -1,2 +1,5 @@
 /Symfony/vendor
 /Symfony/vendor
+cache
+logs
+.idea
