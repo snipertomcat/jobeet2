@@ -11,6 +11,7 @@ class CoreController extends Controller
 {
     public function indexAction()
     {
+
         $scrapeStatus = new ScrapeStatus();
         $scrapeContent = new ScrapeContent();
         $parser = $this->get('stc_scraper.parser');
@@ -24,15 +25,15 @@ class CoreController extends Controller
         $headers = $parser->split_string($file, "<!DOCTYPE", BEFORE, EXCL);
         $data = $parser->split_string($file, "<!DOCTYPE", AFTER, EXCL);
 
+        $noformatted = $parser->parse_clean($file);
+
         $scrapeContent->setHeaders($headers);
         $scrapeContent->setData($data);
 
-        //print_r($return_array['FILE']);exit;
-        //$scrapeContent->set
-
-        $em = $this->getDoctrine()->getManager();
+        print_r($noformatted);
+/*        $em = $this->getDoctrine()->getManager();
         $em->persist($scrapeContent);
-        $em->flush();
+        $em->flush();*/
 
         //$scrape_status = $this->getDoctrine()->get
         /*

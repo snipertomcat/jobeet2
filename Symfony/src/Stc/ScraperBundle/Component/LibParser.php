@@ -17,6 +17,23 @@ class LibParser
 
     }
 
+    /**
+     * Accepts a "dirty" piece of html code (usually right from a web page) and parses out all <script> tags, tabs,
+     * spaces and all html tags an returns the "raw" result
+     * @param $string
+     * @return $string - formatted
+     */
+    public function parse_clean($string)
+    {
+        $noscript = $this->remove($string, "<script", "</script");
+        $noformatted = strip_tags($noscript);
+        $noformatted = str_replace('\t', "", $noformatted);
+        $noformatted = str_replace('%nbsp;', "", $noformatted);
+        $noformatted = str_replace('\n', "", $noformatted);
+
+        return $noformatted;
+    }
+
     /***********************************************************************
     split_string($string, $delineator, $desired, $type)
     -------------------------------------------------------------
@@ -82,7 +99,7 @@ class LibParser
     }
 
     /***********************************************************************
-    $array = parse_array($string, $open_tag, $close_tag)
+    $array = $this->parse_array($string, $open_tag, $close_tag)
     -------------------------------------------------------------
     DESCRIPTION:
     Returns an array of strings that exists repeatedly in $string.
@@ -138,7 +155,7 @@ class LibParser
     function remove($string, $open_tag, $close_tag)
     {
         # Get array of things that should be removed from the input string
-        $remove_array = parse_array($string, $open_tag, $close_tag);
+        $remove_array = $this->parse_array($string, $open_tag, $close_tag);
 
         # Remove each occurrence of each array element from string;
         for($xx=0; $xx<count($remove_array); $xx++)

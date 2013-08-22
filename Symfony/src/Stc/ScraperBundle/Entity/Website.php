@@ -169,7 +169,9 @@ class Website
      */
     public function setCreatedAtValue()
     {
-        // Add your code here
+        $date = new \DateTime();
+
+        $this->created_at = $date;
     }
 
     /**
@@ -177,6 +179,8 @@ class Website
      */
     public function setUpdatedAtValue()
     {
-        // Add your code here
+        $date = new \DateTime();
+
+        $this->updated_at = $date;
     }
 }
