@@ -1,4 +1,4 @@
-Src\ScraperBundle\Entity\Website:
+Stc\ScraperBundle\Entity\Website:
     type: entity
     table: websites
     id:

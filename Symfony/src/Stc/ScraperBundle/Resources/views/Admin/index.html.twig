@@ -1,7 +1,8 @@
-{% block head %}
-    <link rel="stylesheet" href="{{ asset('bundles/stcscraper/css/bootstrap.css') }}" />
-{% endblock %}
+{% extends "StcScraperBundle::layout_admin.html.twig" %}
 
+{% block title "Admin Panel" %}
+
+    {% block content_header '' %}
 
 {% block content %}
     <!-- Header -->
@@ -220,7 +221,6 @@
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dalog -->
     </div><!-- /.modal -->
-
 
 
 

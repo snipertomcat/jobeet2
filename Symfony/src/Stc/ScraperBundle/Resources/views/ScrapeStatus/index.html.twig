@@ -1,0 +1,95 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>ScrapeStatus list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Url</th>
+                <th>Content_type</th>
+                <th>Http_code</th>
+                <th>Header_size</th>
+                <th>Request_size</th>
+                <th>Filetime</th>
+                <th>Ssl_verify_result</th>
+                <th>Redirect_count</th>
+                <th>Total_time</th>
+                <th>Namelookup_time</th>
+                <th>Connect_time</th>
+                <th>Pretransfer_time</th>
+                <th>Size_upload</th>
+                <th>Size_download</th>
+                <th>Speed_download</th>
+                <th>Speed_upload</th>
+                <th>Download_content_length</th>
+                <th>Upload_content_length</th>
+                <th>Starttransfer_time</th>
+                <th>Redirect_time</th>
+                <th>Certinfo</th>
+                <th>Primary_ip</th>
+                <th>Primary_port</th>
+                <th>Local_ip</th>
+                <th>Local_port</th>
+                <th>Redirect_url</th>
+                <th>Created_at</th>
+                <th>Updated_at</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('stc_scraper_status_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.url }}</td>
+                <td>{{ entity.contenttype }}</td>
+                <td>{{ entity.httpcode }}</td>
+                <td>{{ entity.headersize }}</td>
+                <td>{{ entity.requestsize }}</td>
+                <td>{{ entity.filetime }}</td>
+                <td>{{ entity.sslverifyresult }}</td>
+                <td>{{ entity.redirectcount }}</td>
+                <td>{{ entity.totaltime }}</td>
+                <td>{{ entity.namelookuptime }}</td>
+                <td>{{ entity.connecttime }}</td>
+                <td>{{ entity.pretransfertime }}</td>
+                <td>{{ entity.sizeupload }}</td>
+                <td>{{ entity.sizedownload }}</td>
+                <td>{{ entity.speeddownload }}</td>
+                <td>{{ entity.speedupload }}</td>
+                <td>{{ entity.downloadcontentlength }}</td>
+                <td>{{ entity.uploadcontentlength }}</td>
+                <td>{{ entity.starttransfertime }}</td>
+                <td>{{ entity.redirecttime }}</td>
+                <td>{{ entity.certinfo }}</td>
+                <td>{{ entity.primaryip }}</td>
+                <td>{{ entity.primaryport }}</td>
+                <td>{{ entity.localip }}</td>
+                <td>{{ entity.localport }}</td>
+                <td>{{ entity.redirecturl }}</td>
+                <td>{% if entity.createdat %}{{ entity.createdat|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.updatedat %}{{ entity.updatedat|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('stc_scraper_status_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('stc_scraper_status_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('stc_scraper_status_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

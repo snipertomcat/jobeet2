@@ -1,4 +1,3 @@
 stc_scraper:
-    resource: "@StcScraperBundle/Resources/config/routing.yml"
+    resource: "@StcScraperBundle/Resources/config/routing/routing.yml"
     prefix:   /
-
