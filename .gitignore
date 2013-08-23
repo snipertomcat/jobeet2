@@ -1,3 +1,5 @@
+cache
+logs
 /Symfony/vendor
 /Symfony/vendor
 /Symfony/app/cache/dev/annotations/Stc-ScraperBundle-Controller-CoreController#indexAction.cache.php
@@ -221,3 +223,8 @@
 /Symfony/app/cache/dev_old/profiler/index.csv
 /Symfony/app/cache/dev_old/sessions/sess_u10f7rl8p9947vnrbk6uo0sm45
 /Symfony/app/cache/dev_old/templates.php
+.idea
+cache
+logs
+/Symfony/composer.phar
+/Symfony/app/config/parameters.yml

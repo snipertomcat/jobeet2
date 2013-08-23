@@ -9,9 +9,10 @@ parameters:
     stc_scraper.parser.class: Stc\ScraperBundle\Component\LibParser
 
 services:
-#    stc_scraper.example:
-#        class: %stc_scraper.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    stc_scraper.model.status:
+        class: Stc\ScraperBundle\Model\ScrapeStatusModel
+        arguments:
+            entityManager: "@doctrine.orm.entity_manager"
     stc_scraper.http:
         class: %stc_scraper.http.class%
         arguments: ["http_class", %webbot_name%, %curl_timeout%, %cookie_file%]

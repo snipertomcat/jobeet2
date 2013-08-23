@@ -5,9 +5,9 @@ namespace Stc\ScraperBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Website
+ * Feeds
  */
-class Website
+class Feeds
 {
     /**
      * @var integer
@@ -54,7 +54,7 @@ class Website
      * Set url
      *
      * @param string $url
-     * @return Website
+     * @return Feeds
      */
     public function setUrl($url)
     {
@@ -77,7 +77,7 @@ class Website
      * Set entity_id
      *
      * @param integer $entityId
-     * @return Website
+     * @return Feeds
      */
     public function setEntityId($entityId)
     {
@@ -100,7 +100,7 @@ class Website
      * Set is_active
      *
      * @param string $isActive
-     * @return Website
+     * @return Feeds
      */
     public function setIsActive($isActive)
     {
@@ -123,7 +123,7 @@ class Website
      * Set created_at
      *
      * @param \DateTime $createdAt
-     * @return Website
+     * @return Feeds
      */
     public function setCreatedAt($createdAt)
     {
@@ -146,7 +146,7 @@ class Website
      * Set updated_at
      *
      * @param \DateTime $updatedAt
-     * @return Website
+     * @return Feeds
      */
     public function setUpdatedAt($updatedAt)
     {
@@ -171,7 +171,7 @@ class Website
     {
         $date = new \DateTime();
 
-        $this->created_at = $date;
+        $this->setCreatedAt($date);
     }
 
     /**
@@ -181,6 +181,34 @@ class Website
     {
         $date = new \DateTime();
 
-        $this->updated_at = $date;
+        $this->setUpdatedAt($date);
+    }
+    /**
+     * @var string
+     */
+    private $name;
+
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Feeds
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 }
