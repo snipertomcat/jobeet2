@@ -53,15 +53,16 @@
                     <ul class="nav nav-pills pull-right">
                         <li class="active"><a title="Add Widget" data-toggle="modal" href="#addWidgetModal"><span class="glyphicon glyphicon-plus-sign icon-large"></span> Add Widget</a></li>
                     </ul>
+                    <a href="#"><div class="well pull-right" style="background:white;color: black;margin-top:1px;width:100px;height:39px;line-height: 1px">Alerts <span class="badge pull-right" style="margin-top:-8px; color:white;">0</span></div></a>
                 </div>
 
                 <hr>
 
                 <div class="row">
                     <div class="col col-lg-6">
-                        <div class="well">Inbox Messages <span class="badge pull-right">3</span></div>
 
-                        <div class="panel">
+
+{#                        <div class="panel">
                             <div class="panel-heading">
                                 <i class="icon icon-chevron-up chevron"></i>
                                 <i class="icon icon-wrench pull-right"></i> Quick Start
@@ -87,20 +88,22 @@
                                     </a>
                                 </div>
                             </div><!--/panel content-->
-                        </div><!--/panel-->
+                        </div><!--/panel-->#}
 
 
                         <div class="panel">
-                            <div class="panel-heading">Report</div>
+                            <div class="panel-heading">Active Web Scrapers</div>
                             <table class="table table-striped">
                                 <thead>
-                                <tr><th>Col 1</th><th>Col 2</th><th>Col 3</th></tr></thead>
+                                <tr><th>Name</th><th>Url</th><th>Count</th></tr></thead>
                                 <tbody>
-                                <tr><td>45</td><td>2.45%</td><td>Direct</td></tr>
-                                <tr><td>289</td><td>56.2%</td><td>Referral</td></tr>
-                                <tr><td>98</td><td>25%</td><td>Type</td></tr>
-                                <tr><td>..</td><td>..</td><td>..</td></tr>
-                                <tr><td>..</td><td>..</td><td>..</td></tr>
+{#
+                                <tr><td>{{ site_name_1 }}</td><td>{{ site_url_1 }}</td><td>{{ site_count_1 }}</td></tr>
+                                <tr><td>{{ site_name_2 }}</td><td>{{ site_url_2 }}</td><td>{{ site_count_2 }}</td></tr>
+                                <tr><td>{{ site_name_3 }}</td><td>{{ site_url_3 }}</td><td>{{ site_count_3 }}</td></tr>
+                                <tr><td>{{ site_name_4 }}</td><td>{{ site_url_4 }}</td><td>{{ site_count_4 }}</td></tr>
+                                <tr><td>{{ site_name_5 }}</td><td>{{ site_url_5 }}</td><td>{{ site_count_5 }}</td></tr>
+#}
                                 </tbody>
                             </table>
                         </div><!--/panel-->

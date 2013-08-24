@@ -12,6 +12,11 @@ class CoreController extends Controller
     public function indexAction()
     {
 
+        $reader = $this->get('eko_feed.feed.reader');
+        $feed = $reader->load('http://php.net/feed.atom');
+
+        //print_r($feed);
+/*
         $scrapeStatus = new ScrapeStatus();
         $scrapeContent = new ScrapeContent();
         $parser = $this->get('stc_scraper.parser');
@@ -30,7 +35,10 @@ class CoreController extends Controller
         $scrapeContent->setHeaders($headers);
         $scrapeContent->setData($data);
 
-        print_r($noformatted);
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($scrapeContent);
+        $em->flush();*/
+
 /*        $em = $this->getDoctrine()->getManager();
         $em->persist($scrapeContent);
         $em->flush();*/

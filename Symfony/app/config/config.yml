@@ -63,3 +63,12 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+eko_feed:
+    feeds:
+        article:
+            title:       'My articles/posts'
+            description: 'Latest Articles'
+            link:        'http://wenigoe.com'
+            encoding:    'utf-8'
+            author:      'Jesse Griffin'
