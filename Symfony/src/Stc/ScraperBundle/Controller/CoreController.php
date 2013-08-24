@@ -11,11 +11,13 @@ class CoreController extends Controller
 {
     public function indexAction()
     {
+        $contentLogic = $this->get('stc_scraper.logic.content');
+        $feedModel = $this->get('stc_scraper.model.feeds');
+        //print_r($contentLogic);exit;
 
-        $reader = $this->get('eko_feed.feed.reader');
-        $feed = $reader->load('http://php.net/feed.atom');
+        $results = $contentLogic->startFeedScraper();
+        print_r($results);exit;
 
-        //print_r($feed);
 /*
         $scrapeStatus = new ScrapeStatus();
         $scrapeContent = new ScrapeContent();

@@ -11,11 +11,29 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-
+        $httpLib = $this->get('stc_scraper.http');
+        $parser = $this->get('stc_scraper.parser');
         $scrape_sites = $em->getRepository('StcScraperBundle:Website')->findAll();
         $count = count($scrape_sites);
+        $scrapeArray = array();
+        $contentModel = $this->get('stc_scraper.model.content');
         if ($count > 0) {
+            foreach ($scrape_sites as $site) {
+                if ($site->getIsActive == 1) {
+                    $target = $site->getUrl();
+                    $ref = "google.com";
+                    $scrape = $httpLib->http_get_withheader($target,$ref);
+                    $file = $scrape['FILE'];
+                    $headers = $parser->split_string($file, "<!DOCTYPE", BEFORE, EXCL);
+                    $data = $parser->split_string($file, "<!DOCTYPE", AFTER, EXCL);
 
+                    $noFormatted = $parser->parse_clean($data);
+
+                    $params['header'] = $headers;
+                    $params['data'] = $noFormatted;
+
+                }
+            }
         }
 
 /*        $http_lib = $this->get('stc_scraper.http');

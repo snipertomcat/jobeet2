@@ -21,7 +21,8 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "eko/feedbundle": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
-        "doctrine/data-fixtures": "dev-master"
+        "doctrine/data-fixtures": "dev-master",
+        "fabpot/goutte": "*"
     },
     "scripts": {
         "post-install-cmd": [
