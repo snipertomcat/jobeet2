@@ -1,10 +1,10 @@
 <?php
 
-namespace Stc\ScraperBundle\Controller;
+namespace Stc\ScraperBundle\Model;
 
+use Doctrine\ORM\EntityManager;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 use Stc\ScraperBundle\Entity\ScrapeContent;
 use Stc\ScraperBundle\Form\ScrapeContentType;
 
@@ -12,8 +12,21 @@ use Stc\ScraperBundle\Form\ScrapeContentType;
  * ScrapeContent controller.
  *
  */
-class ScrapeContentController extends Controller
+class ScrapeContentModel implements StcModelInterface
 {
+    protected $em;
+    protected $repository;
+
+    public function __construct(EntityManager $entityManager)
+    {
+        $this->em = $entityManager;
+        $this->repository = $this->em->getRepository('StcScraperBundle:ScraperContent');
+    }
+
+    public function getEntityManager()
+    {
+        return $this->em;
+    }
 
     /**
      * Lists all ScrapeContent entities.

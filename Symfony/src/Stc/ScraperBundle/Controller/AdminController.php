@@ -8,13 +8,20 @@
 
 namespace Stc\ScraperBundle\Controller;
 
+use Stc\ScraperBundle\Model\ScrapeStatusModel;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class AdminController extends Controller
 {
     public function indexAction()
     {
-        //print_r($this);
+        $statusModel = $this->get('stc_scraper.model.status');
+
+        foreach ($statusModel->findAll() as $status) {
+            //print_r($status);exit;
+            echo $status->getFiletime();
+        }
+
         return $this->render('StcScraperBundle:Admin:index.html.twig');
     }
 }

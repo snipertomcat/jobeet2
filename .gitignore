@@ -228,3 +228,5 @@ cache
 logs
 /Symfony/composer.phar
 /Symfony/app/config/parameters.yml
+vendor
+.idea
