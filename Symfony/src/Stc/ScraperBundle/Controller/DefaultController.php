@@ -19,7 +19,7 @@ class DefaultController extends Controller
         $contentModel = $this->get('stc_scraper.model.content');
         if ($count > 0) {
             foreach ($scrape_sites as $site) {
-                if ($site->getIsActive == 1) {
+                if ($site->getIsActive() == 1) {
                     $target = $site->getUrl();
                     $ref = "google.com";
                     $scrape = $httpLib->http_get_withheader($target,$ref);

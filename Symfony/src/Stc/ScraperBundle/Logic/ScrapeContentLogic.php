@@ -18,7 +18,7 @@ class ScrapeContentLogic extends Controller implements StcLogicInterface
 
     public function startFeedScraper()
     {
-        $feeds = $this->get('stc_scraper.model.feed')->getFeeds();
+        $feeds = $this->get('stc_scraper.model.feeds')->getFeeds();
         foreach ($feeds as $feed)
         {
             $results[] = $this->doScrape($feed->getUrl());

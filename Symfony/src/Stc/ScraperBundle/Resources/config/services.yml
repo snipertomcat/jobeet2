@@ -24,7 +24,7 @@ services:
     stc_scraper.logic.content:
         class: Stc\ScraperBundle\Logic\ScrapeContentLogic
         arguments:
-            model: "@stc_scraper.model.content"
+            container: "@stc_scraper.model.content"
     stc_scraper.http:
         class: %stc_scraper.http.class%
         arguments: ["http_class", %webbot_name%, %curl_timeout%, %cookie_file%]
