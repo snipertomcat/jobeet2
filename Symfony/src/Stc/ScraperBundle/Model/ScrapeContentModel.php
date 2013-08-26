@@ -20,7 +20,7 @@ class ScrapeContentModel implements StcModelInterface
     public function __construct(EntityManager $entityManager)
     {
         $this->em = $entityManager;
-        $this->repository = $this->em->getRepository('StcScraperBundle:ScraperContent');
+        $this->repository = $this->em->getRepository('StcScraperBundle:ScrapeContent');
     }
 
     public function getEntityManager()
@@ -32,15 +32,28 @@ class ScrapeContentModel implements StcModelInterface
      * Lists all ScrapeContent entities.
      *
      */
-    public function indexAction()
+    public function findAll()
     {
-        $em = $this->getDoctrine()->getManager();
+        $entities = $this->em->getRepository('StcScraperBundle:ScrapeContent')->findAll();
 
-        $entities = $em->getRepository('StcScraperBundle:ScrapeContent')->findAll();
+        return $entities;
+    }
 
-        return $this->render('StcScraperBundle:ScrapeContent:index.html.twig', array(
-            'entities' => $entities,
-        ));
+    public function findById($id)
+    {
+        $entity = $this->em->getRepository('StcScraperBundle:ScraperContent')->find($id);
+
+        return $entity;
+    }
+
+    public function save($params)
+    {
+        $entity = new ScrapeContent();
+        $entity->setData($params['data']);
+        $entity->setHeaders($params['headers']);
+
+        $this->em->persist($entity);
+        $this->em->flush();
     }
     /**
      * Creates a new ScrapeContent entity.

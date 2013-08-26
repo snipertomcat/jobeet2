@@ -66,9 +66,6 @@ class ScrapeContent
      */
     public function setData($data)
     {
-        if (is_array($data)) {
-            $data = serialize($data);
-        }
         $this->data = $data;
     
         return $this;
@@ -81,10 +78,6 @@ class ScrapeContent
      */
     public function getData()
     {
-        if (is_array($this->data)) {
-            $this->data = unserialize($this->data);
-        }
-
         return $this->data;
     }
 }

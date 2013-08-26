@@ -42,6 +42,21 @@ class ScrapeStatusModel implements StcModelInterface
         return $entities;
     }
 
+    public function save($params)
+    {
+        $entity = new ScrapeStatus();
+        foreach ($params as $key=>$val) {
+            $method = "set".ucfirst($key);
+            $data = $val;
+            $entity->$method($data);
+        }
+        $entity->setCreatedAtValue();
+        $entity->setUpdatedAtValue();
+
+        $this->em->persist($entity);
+        $this->em->flush();
+    }
+
     /**
      * Creates a new ScrapeStatus entity.
      *
