@@ -12,11 +12,13 @@ class CoreController extends Controller
     public function indexAction()
     {
         $contentLogic = $this->get('stc_scraper.logic.content');
-        $feedModel = $this->get('stc_scraper.model.feeds');
+        $contentModel = $this->get('stc_scraper.model.content');
         //print_r($contentLogic);exit;
 
         $results = $contentLogic->startFeedScraper();
+        echo "<pre>";
         print_r($results);exit;
+        echo "</pre>";
 
 /*
         $scrapeStatus = new ScrapeStatus();

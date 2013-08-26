@@ -5,33 +5,33 @@ namespace Stc\ScraperBundle\Logic;
 
 use Stc\ScraperBundle\Model\ScrapeContentModel;
 use Stc\ScraperBundle\Model\StcModelInterface;
+use Stc\ScraperBundle\Model\StcModelContainer;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class ScrapeContentLogic extends Controller implements StcLogicInterface
+class ScrapeContentLogic implements StcLogicInterface
 {
     protected $models = array();
 
-    public function __construct(StcModelInterface $model)
+    public function __construct(StcModelContainer $container)
     {
-        $this->model['ScrapeContentModel'] = $model;
+        $this->container = $container;
     }
 
     public function startFeedScraper()
     {
-        $feeds = $this->get('stc_scraper.model.feeds')->getFeeds();
+        $feedModel = $this->container->getModel('stc_scraper.model.feeds');
+        $feeds = $feedModel->getFeeds();
         foreach ($feeds as $feed)
         {
-            $results[] = $this->doScrape($feed->getUrl());
+            $results = $this->doScrape($feed->getUrl());
         }
         return $results;
     }
 
-    private function doScrape($urls)
+    private function doScrape($url)
     {
-        $reader = $this->get('eko_feed.feed.reader');
-        foreach ($urls as $url) {
-            $parsedFeeds[$url] = $reader->load($url)->get();
-        }
+        $reader = $this->container->getModel('eko_feed.feed.reader');
+        $parsedFeeds[$url] = $reader->load($url)->get();
         return $parsedFeeds;
     }
 

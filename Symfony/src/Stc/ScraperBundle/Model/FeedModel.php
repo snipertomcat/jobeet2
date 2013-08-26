@@ -4,8 +4,9 @@ namespace Stc\ScraperBundle\Model;
 
 use Stc\ScraperBundle\Model\StcModelInterface;
 use Doctrine\ORM\EntityManager;
+use Stc\ScraperBundle\Entity\Feeds;
 
-class FeedModel implements StcModelInterface
+class FeedModel extends Feeds implements StcModelInterface
 {
     protected $em;
 

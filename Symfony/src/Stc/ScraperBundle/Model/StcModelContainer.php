@@ -1,14 +1,12 @@
 <?php
 
-namespace Stc\ScraperBundle\Model\StcModelContainer;
-
-use Stc\ScraperBundle\Model\StcModelInterface;
+namespace Stc\ScraperBundle\Model;
 
 class StcModelContainer
 {
     protected $models = array();
 
-    public function addModel($key, StcModelInterface $model)
+    public function addModel($key, $model)
     {
         $this->models[$key] = $model;
     }

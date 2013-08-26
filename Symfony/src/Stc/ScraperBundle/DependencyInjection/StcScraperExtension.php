@@ -19,11 +19,13 @@ class StcScraperExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
+        //print_r($configs);
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
     }
 
     public function getAlias()
