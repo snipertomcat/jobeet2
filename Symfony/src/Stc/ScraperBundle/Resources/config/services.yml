@@ -9,10 +9,32 @@ parameters:
     stc_scraper.parser.class: Stc\ScraperBundle\Component\LibParser
 
 services:
+    stc_scraper.model.container:
+        class: Stc\ScraperBundle\Model\StcModelContainer
+        calls:
+            - [addModel, ['stc_scraper.model.feeds',"@stc_scraper.model.feeds"]]
+            - [addModel, ['eko_feed.feed.reader', "@eko_feed.feed.reader"]]
+            - [addModel, ['stc_scraper.model.links_feeds_harvested', '@stc_scraper.model.links_feeds_harvested']]
+    stc_scraper.model.U:
+        class: Stc\ScraperBundlel\Model\LinksFeedsHarvested
+        srguments:
+            entityManager: "@doctrine.orm.entity_manager"
     stc_scraper.model.status:
         class: Stc\ScraperBundle\Model\ScrapeStatusModel
         arguments:
             entityManager: "@doctrine.orm.entity_manager"
+    stc_scraper.model.content:
+        class: Stc\ScraperBundle\Model\ScrapeContentModel
+        arguments:
+            entityManager: "@doctrine.orm.entity_manager"
+    stc_scraper.model.feeds:
+        class: Stc\ScraperBundle\Model\FeedModel
+        arguments:
+            entityManager: "@doctrine.orm.entity_manager"
+    stc_scraper.logic.content:
+        class: Stc\ScraperBundle\Logic\ScrapeContentLogic
+        arguments:
+            container: "@stc_scraper.model.container"
     stc_scraper.http:
         class: %stc_scraper.http.class%
         arguments: ["http_class", %webbot_name%, %curl_timeout%, %cookie_file%]
