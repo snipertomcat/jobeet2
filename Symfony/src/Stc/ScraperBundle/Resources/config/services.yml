@@ -15,9 +15,9 @@ services:
             - [addModel, ['stc_scraper.model.feeds',"@stc_scraper.model.feeds"]]
             - [addModel, ['eko_feed.feed.reader', "@eko_feed.feed.reader"]]
             - [addModel, ['stc_scraper.model.links_feeds_harvested', '@stc_scraper.model.links_feeds_harvested']]
-    stc_scraper.model.U:
-        class: Stc\ScraperBundlel\Model\LinksFeedsHarvested
-        srguments:
+    stc_scraper.model.links_feeds_harvested:
+        class: Stc\ScraperBundle\Model\LinksFeedsHarvestedModel
+        arguments:
             entityManager: "@doctrine.orm.entity_manager"
     stc_scraper.model.status:
         class: Stc\ScraperBundle\Model\ScrapeStatusModel

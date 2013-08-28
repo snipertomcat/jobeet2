@@ -42,6 +42,8 @@ class RssCommand extends ContainerAwareCommand
                     'data' => serialize($data)
             ));
         }
-        print_r($data);
+        //print_r($data);
+
+
     }
 }
