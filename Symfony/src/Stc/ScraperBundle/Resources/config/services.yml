@@ -7,6 +7,7 @@ parameters:
     stc_scraper.images.class: Stc\ScraperBundle\Component\LibDownloadImages
     stc_scraper.resolver.class: Stc\ScraperBundle\Component\LibAddressResolver
     stc_scraper.parser.class: Stc\ScraperBundle\Component\LibParser
+    stc_scraper.yelp.class: Stc\ScraperBundle\Model\YelpContentModel
 
 services:
     stc_scraper.model.container:
@@ -19,6 +20,10 @@ services:
         class: Stc\ScraperBundle\Model\LinksFeedsHarvestedModel
         arguments:
             entityManager: "@doctrine.orm.entity_manager"
+    stc_scraper.model.yelp:
+        class: %stc_scraper.yelp.class%
+        arguments:
+            enitityManager: "@doctrine.orm.entity_manager"
     stc_scraper.model.status:
         class: Stc\ScraperBundle\Model\ScrapeStatusModel
         arguments:

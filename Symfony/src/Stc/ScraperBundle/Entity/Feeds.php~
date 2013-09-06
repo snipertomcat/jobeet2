@@ -17,6 +17,11 @@ class Feeds
     /**
      * @var string
      */
+    private $name;
+
+    /**
+     * @var string
+     */
     private $url;
 
     /**
@@ -48,6 +53,29 @@ class Feeds
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Feeds
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 
     /**
@@ -169,46 +197,14 @@ class Feeds
      */
     public function setCreatedAtValue()
     {
-        $date = new \DateTime();
-
-        $this->setCreatedAt($date);
+        // Add your code here
     }
 
     /**
-     * @ORM\PreUpdate
+     * @ORM\PrePersist
      */
     public function setUpdatedAtValue()
     {
-        $date = new \DateTime();
-
-        $this->setUpdatedAt($date);
-    }
-    /**
-     * @var string
-     */
-    private $name;
-
-
-    /**
-     * Set name
-     *
-     * @param string $name
-     * @return Feeds
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-    
-        return $this;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string 
-     */
-    public function getName()
-    {
-        return $this->name;
+        // Add your code here
     }
 }

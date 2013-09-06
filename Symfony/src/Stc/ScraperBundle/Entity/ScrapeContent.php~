@@ -3,12 +3,11 @@
 namespace Stc\ScraperBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Eko\FeedBundle\Item\Reader\ItemInterface;
 
 /**
  * ScrapeContent
  */
-class ScrapeContent implements ItemInterface
+class ScrapeContent
 {
     /**
      * @var integer
@@ -67,9 +66,6 @@ class ScrapeContent implements ItemInterface
      */
     public function setData($data)
     {
-        if (is_array($data)) {
-            $data = serialize($data);
-        }
         $this->data = $data;
     
         return $this;
@@ -82,35 +78,6 @@ class ScrapeContent implements ItemInterface
      */
     public function getData()
     {
-        if (is_array($this->data)) {
-            $this->data = unserialize($this->data);
-        }
-
         return $this->data;
-    }
-
-    public function setFeedItemTitle($title)
-    {
-        $newdata = "Title: $title" . $this->data;
-        $this->setData($newdata);
-    }
-
-    public function setFeedItemDescription($desc)
-    {
-        $newdata = "Description: $desc" . $this->data;
-
-        $this->setData($newdata);
-    }
-
-    public function setFeedItemLink($link)
-    {
-        $newHeaders = $this->headers . "; " . $link;
-        $this->setHeaders($newHeaders);
-    }
-
-    public function setFeedItemPubDate(\DateTime $date)
-    {
-        $newHeaders = $date->createFromFormat('Y-m-d h:i',$date->getTimezone()) . $this->headers;
-        $this->setHeaders($newHeaders);
     }
 }

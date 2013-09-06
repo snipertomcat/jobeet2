@@ -17,3 +17,7 @@ stc_scraper_theme:
 stc_admin:
     pattern: /admin
     defaults: { _controller: StcScraperBundle:Admin:index }
+
+stc_yelp:
+    pattern: /scraper/yelp
+    defaults: { _controller: StcScraperBundle:Default:yelp }

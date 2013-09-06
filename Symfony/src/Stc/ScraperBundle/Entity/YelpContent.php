@@ -5,9 +5,9 @@ namespace Stc\ScraperBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Website
+ * YelpContent
  */
-class Website
+class YelpContent
 {
     /**
      * @var integer
@@ -15,14 +15,19 @@ class Website
     private $id;
 
     /**
-     * @var string
-     */
-    private $url;
-
-    /**
      * @var integer
      */
     private $entity_id;
+
+    /**
+     * @var string
+     */
+    private $name;
+
+    /**
+     * @var string
+     */
+    private $url;
 
     /**
      * @var string
@@ -51,33 +56,10 @@ class Website
     }
 
     /**
-     * Set url
-     *
-     * @param string $url
-     * @return Website
-     */
-    public function setUrl($url)
-    {
-        $this->url = $url;
-    
-        return $this;
-    }
-
-    /**
-     * Get url
-     *
-     * @return string 
-     */
-    public function getUrl()
-    {
-        return $this->url;
-    }
-
-    /**
      * Set entity_id
      *
      * @param integer $entityId
-     * @return Website
+     * @return YelpContent
      */
     public function setEntityId($entityId)
     {
@@ -97,10 +79,56 @@ class Website
     }
 
     /**
+     * Set name
+     *
+     * @param string $name
+     * @return YelpContent
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set url
+     *
+     * @param string $url
+     * @return YelpContent
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+    
+        return $this;
+    }
+
+    /**
+     * Get url
+     *
+     * @return string 
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
      * Set is_active
      *
      * @param string $isActive
-     * @return Website
+     * @return YelpContent
      */
     public function setIsActive($isActive)
     {
@@ -123,7 +151,7 @@ class Website
      * Set created_at
      *
      * @param \DateTime $createdAt
-     * @return Website
+     * @return YelpContent
      */
     public function setCreatedAt($createdAt)
     {
@@ -146,7 +174,7 @@ class Website
      * Set updated_at
      *
      * @param \DateTime $updatedAt
-     * @return Website
+     * @return YelpContent
      */
     public function setUpdatedAt($updatedAt)
     {

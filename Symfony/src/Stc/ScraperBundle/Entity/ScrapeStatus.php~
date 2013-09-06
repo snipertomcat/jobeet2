@@ -17,11 +17,6 @@ class ScrapeStatus
     /**
      * @var string
      */
-    private $url;
-
-    /**
-     * @var string
-     */
     private $content_type;
 
     /**
@@ -159,6 +154,11 @@ class ScrapeStatus
      */
     private $scrapecontent;
 
+    /**
+     * @var \Stc\ScraperBundle\Entity\Website
+     */
+    private $website;
+
 
     /**
      * Get id
@@ -168,29 +168,6 @@ class ScrapeStatus
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set url
-     *
-     * @param string $url
-     * @return ScrapeStatus
-     */
-    public function setUrl($url)
-    {
-        $this->url = $url;
-    
-        return $this;
-    }
-
-    /**
-     * Get url
-     *
-     * @return string 
-     */
-    public function getUrl()
-    {
-        return $this->url;
     }
 
     /**
@@ -334,7 +311,7 @@ class ScrapeStatus
     /**
      * Set redirect_count
      *
-     * @param $redirectCount
+     * @param integer $redirectCount
      * @return ScrapeStatus
      */
     public function setRedirectCount($redirectCount)
@@ -347,7 +324,7 @@ class ScrapeStatus
     /**
      * Get redirect_count
      *
-     * @return integer
+     * @return integer 
      */
     public function getRedirectCount()
     {
@@ -836,54 +813,6 @@ class ScrapeStatus
     {
         return $this->scrapecontent;
     }
-    /**
-     * @ORM\PrePersist
-     */
-    public function setCreatedAtValue()
-    {
-        $this->created_at = new \DateTime();
-    }
-
-    /**
-     * @ORM\PreUpdate
-     */
-    public function setUpdatedAtValue()
-    {
-        $this->updated_at = new \DateTime();
-    }
-    /**
-     * @var integer
-     */
-    private $website_id;
-
-
-    /**
-     * Set website_id
-     *
-     * @param integer $websiteId
-     * @return ScrapeStatus
-     */
-    public function setWebsiteId($websiteId)
-    {
-        $this->website_id = $websiteId;
-    
-        return $this;
-    }
-
-    /**
-     * Get website_id
-     *
-     * @return integer 
-     */
-    public function getWebsiteId()
-    {
-        return $this->website_id;
-    }
-    /**
-     * @var \Stc\ScraperBundle\Entity\Website
-     */
-    private $website;
-
 
     /**
      * Set website
@@ -906,5 +835,20 @@ class ScrapeStatus
     public function getWebsite()
     {
         return $this->website;
+    }
+    /**
+     * @ORM\PrePersist
+     */
+    public function setCreatedAtValue()
+    {
+        // Add your code here
+    }
+
+    /**
+     * @ORM\PreUpdate
+     */
+    public function setUpdatedAtValue()
+    {
+        // Add your code here
     }
 }
