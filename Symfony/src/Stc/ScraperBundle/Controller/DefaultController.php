@@ -2,9 +2,14 @@
 
 namespace Stc\ScraperBundle\Controller;
 
+use Artax\Client;
 use Stc\ScraperBundle\DependencyInjection\StcScraperExtension;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Artax\Request;
+use Artax\ClientException;
+use Artax\Ext\Progress\ProgressDisplay;
+use Artax\Ext\Progress\ProgressExtension;
 
 class DefaultController extends Controller
 {
@@ -17,6 +22,7 @@ class DefaultController extends Controller
         $linksFeedsHarvestedModel = $this->get('stc_scraper.model.links_feeds_harvested');
         $count = count($scrape_sites);
         $scrapeArray = array();
+        $params = array();
         $contentModel = $this->get('stc_scraper.model.content');
         if ($count > 0) {
             foreach ($scrape_sites as $site) {
@@ -37,11 +43,11 @@ class DefaultController extends Controller
 
                 }
             }
-        }
 
-        foreach ($links as $link) {
-            if (stristr($link,'obituary.aspx')) {
-                $linksFeedsHarvestedModel->saveLink($link);
+            foreach ($links as $link) {
+                if (stristr($link,'obituary.aspx')) {
+                    $linksFeedsHarvestedModel->saveLink($link);
+                }
             }
         }
 
@@ -79,8 +85,8 @@ class DefaultController extends Controller
         $contentModel = $this->get('stc_scraper.model.content');
         $yelpModel = $this->get('stc_scraper.model.yelp');
 
-        $target = $site->getUrl();
-        $ref = "google.com";
+        //$target = $site->getUrl();
+        $repository = $this->getDoctrine()->getEntityManager()->getRepository('StcScraperBundle:website');
         $scrape = $httpLib->http_get_withheader($target,$ref);
         $file = $scrape['FILE'];
         $headers = $parser->split_string($file, "<!DOCTYPE", BEFORE, EXCL);
@@ -102,6 +108,39 @@ class DefaultController extends Controller
 
     public function themeAction()
     {
+        $client = new Client();
+
+        $client->addObservation([
+            Client::REQUEST => function($dataArr) {
+                $req = $dataArr[0];
+                $req->setProtocol('1.0')->setHeader('Connection', 'keep-alive');
+            }
+        ]);
+
+
+        $requests = [
+            'so-home'   => (new Request)->setUri('http://stackoverflow.com'),
+            'so-php'    => (new Request)->setUri('http://stackoverflow.com/questions/tagged/php'),
+            'so-python' => (new Request)->setUri('http://stackoverflow.com/questions/tagged/python'),
+            'so-http'   => (new Request)->setUri('http://stackoverflow.com/questions/tagged/http'),
+            'so-html'   => (new Request)->setUri('http://stackoverflow.com/questions/tagged/html'),
+            'so-css'    => (new Request)->setUri('http://stackoverflow.com/questions/tagged/css'),
+            'so-js'     => (new Request)->setUri('http://stackoverflow.com/questions/tagged/javascript'),
+            'google'    => (new Request)->setUri('http://www.google.com'),
+            'bing'      => (new Request)->setUri('http://www.bing.com'),
+            'yahoo'     => (new Request)->setUri('http://www.yahoo.com'),
+            'nytimes'   => (new Request)->setUri('http://www.nytimes.com'),
+            'wikipedia' => (new Request)->setUri('http://en.wikipedia.org/wiki/Main_Page')
+        ];
+
+        $lastUpdate = microtime(TRUE);
+        $displayLines = [];
+        $requestNameMap = new SplObjectStorage;
+
+        foreach ($requests as $key=>$val) {
+            $re
+        }
+
         return $this->render('StcScraperBundle:Default:index_simple.html.twig');
     }
 }

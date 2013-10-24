@@ -22,7 +22,8 @@
         "eko/feedbundle": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
         "doctrine/data-fixtures": "dev-master",
-        "fabpot/goutte": "*"
+        "rdlowrey/alert": "0.2.*",
+        "rdlowrey/artax": "*"
     },
     "scripts": {
         "post-install-cmd": [

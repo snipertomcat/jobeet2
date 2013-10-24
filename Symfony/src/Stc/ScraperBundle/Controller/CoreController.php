@@ -17,7 +17,7 @@ class CoreController extends Controller
 
         $results = $contentLogic->startFeedScraper();
         echo "<pre>";
-        print_r($results);exit;
+        //print_r($results);exit;
         echo "</pre>";
 
 /*
