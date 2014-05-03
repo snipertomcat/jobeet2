@@ -5,22 +5,39 @@ namespace Stc\ScraperBundle\Controller;
 
 use Stc\ScraperBundle\Entity\ScrapeContent;
 use Stc\ScraperBundle\Entity\ScrapeStatus;
+use Symfony\Bundle\FrameworkBundle\Client;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\BrowserKit;
 
 class CoreController extends Controller
 {
     public function indexAction()
     {
+        $client = new Client($this->get('kernel'));
+
+
+/*
+        $form = $crawler->form(array(
+            'accountForm[Account.UserName]' => 'beichmann@gmail.com',
+            'accountForm[Account.PassWord' => '0venifY?'
+        ));
+
+        $crawler = $client->request('POST', 'https://www.starbucks.com/account/signin',array(
+            'accountForm[Account.UserName]' => 'beichmann@gmail.com',
+            'accountForm[Account.PassWord' => '0venifY?'
+        ));*/
+        //$crawler = $client->click($crawler->selectLink('Sign In')->link());
+
+        print_r($crawler);exit;
+
         $contentLogic = $this->get('stc_scraper.logic.content');
         $contentModel = $this->get('stc_scraper.model.content');
         //print_r($contentLogic);exit;
 
-        $results = $contentLogic->startFeedScraper();
+        //$results = $contentLogic->startFeedScraper();
         echo "<pre>";
         //print_r($results);exit;
-        echo "</pre>";
 
-/*
         $scrapeStatus = new ScrapeStatus();
         $scrapeContent = new ScrapeContent();
         $parser = $this->get('stc_scraper.parser');
@@ -41,7 +58,7 @@ class CoreController extends Controller
 
         $em = $this->getDoctrine()->getManager();
         $em->persist($scrapeContent);
-        $em->flush();*/
+        $em->flush();
 
 /*        $em = $this->getDoctrine()->getManager();
         $em->persist($scrapeContent);

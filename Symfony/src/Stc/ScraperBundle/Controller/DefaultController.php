@@ -2,7 +2,10 @@
 
 namespace Stc\ScraperBundle\Controller;
 
+use Alert\ReactorFactory;
+use Artax\AsyncClient;
 use Artax\Client;
+use Stc\ScraperBundle\Component\MyParallelCrawler;
 use Stc\ScraperBundle\DependencyInjection\StcScraperExtension;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -79,21 +82,22 @@ class DefaultController extends Controller
         $httpLib = $this->get('stc_scraper.http');
         $parser = $this->get('stc_scraper.parser');
 
-        $site = $this->get('stc_scraper.model.website');
+        //$site = $this->get('stc_scraper.model.website');
         $linksFeedsHarvestedModel = $this->get('stc_scraper.model.links_feeds_harvested');
         $scrapeArray = array();
         $contentModel = $this->get('stc_scraper.model.content');
         $yelpModel = $this->get('stc_scraper.model.yelp');
 
         //$target = $site->getUrl();
+        $target = "http://yahoo.com";
         $repository = $this->getDoctrine()->getEntityManager()->getRepository('StcScraperBundle:website');
-        $scrape = $httpLib->http_get_withheader($target,$ref);
+        $scrape = $httpLib->http_get_withheader($target,$target);
         $file = $scrape['FILE'];
         $headers = $parser->split_string($file, "<!DOCTYPE", BEFORE, EXCL);
         $data = $parser->split_string($file, "<!DOCTYPE", AFTER, EXCL);
-        $findDiv = $parser->parse_array($data, '<a class="biz-name"', '</a>');
+        $findDiv = $parser->parse_array($data, '<a', '</a>');
         foreach ($findDiv as $div) {
-            //$href[] =$parser->parse_array($div, 'href');
+            $href[] = $parser->parse_array($div, '<a','</a>');
         }
         print_r($findDiv);
 /*        $noFormatted = $parser->parse_clean($data);
@@ -110,6 +114,11 @@ class DefaultController extends Controller
     {
         $client = new Client();
 
+        $parser = $this->get('stc_scraper.parser');
+        $reactorFactory = new ReactorFactory();
+        $parallelCrawler = new MyParallelCrawler($reactor=($reactorFactory->select()), new AsyncClient($reactor));
+        $parallelCrawler->crawl('http://localhost/sugarcrm');
+        exit;
         $client->addObservation([
             Client::REQUEST => function($dataArr) {
                 $req = $dataArr[0];
@@ -135,10 +144,24 @@ class DefaultController extends Controller
 
         $lastUpdate = microtime(TRUE);
         $displayLines = [];
-        $requestNameMap = new SplObjectStorage;
+        $requestNameMap = new \SplObjectStorage;
 
-        foreach ($requests as $key=>$val) {
-            $re
+        foreach ($requests as $key=>$request) {
+            try {
+                $response = $client->request($request);
+            } catch(\Artax\SocketException $e) {
+                continue;
+            }
+            $body = $response->getBody();
+            //echo $body;
+            //$body = $parser->parse_clean($body);
+            $links = $parser->parse_array($body, '<a', '</a>');
+            foreach ($links as $link) {
+                //$cleanLink = $parser->parse_clean($link);
+                $cleanLink = "<a href='http://www.stackoverflow.com/".$link."'>$link</a>";
+                //echo $cleanLink."<br>";
+            }
+            //echo "<pre>";print_r($links);exit;
         }
 
         return $this->render('StcScraperBundle:Default:index_simple.html.twig');

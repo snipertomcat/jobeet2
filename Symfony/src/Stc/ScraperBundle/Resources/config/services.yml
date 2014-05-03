@@ -51,3 +51,4 @@ services:
     stc_scraper.images:
         class: %stc_scraper.images.class%
         arguments: ['@stc_scraper.parser', '@stc_scraper.http', '@stc_scraper.resolver']
+

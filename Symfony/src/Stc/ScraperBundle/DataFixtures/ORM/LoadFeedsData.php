@@ -16,6 +16,8 @@ class LoadFeedData extends AbstractFixture implements OrderedFixtureInterface
         $famousDead->setUrl("http://feeds.feedburner.com/FamousDeadDB?format=xml");
         $famousDead->setIsActive(1);
         $famousDead->setEntityId(1);
+        $famousDead->setCreatedAt(new \DateTime('now'));
+        $famousDead->setUpdatedAt(new \DateTime('now'));
 
         $em->persist($famousDead);
         $em->flush();
